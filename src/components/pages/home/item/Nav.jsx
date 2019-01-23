@@ -8,7 +8,12 @@ export class Nav extends Component {
   render() {
     return (
       <div className="bigImg__cont--nav">
-        Nav
+        <div className="bigImg__cont--nav__l">
+          <span className="nav--span-1 no-border">Write a Review</span><span className="nav--span-2  no-border">Talk</span> 
+        </div>
+        <div className="bigImg__cont--nav__r">
+          <span className="nav--span-1 no-border">Log In</span><span className="nav--span-2 bg-acteve">Sign Up</span> 
+        </div>
       </div>
     )
   }
