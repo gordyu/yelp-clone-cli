@@ -1,0 +1,39 @@
+.yelpTon{
+    .main{
+        width: 960px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 0;
+       
+
+       .list{
+            border-bottom: solid $color-grey-dark 1px;
+            width: 100%;
+            overflow: hidden;
+       }
+      
+
+        .list__order{
+            display: flex;
+            list-style: none;
+            justify-content:center ;
+            overflow: hidden;
+            li{
+                border: none;
+                padding: 0 12px;
+                transition: all .2s ease-out;
+                font-size: 1.7rem;
+                cursor: pointer;
+                &:hover{
+                    border-bottom:  4px solid $color-primary-light;
+                    border-radius: 0;
+                }
+            } 
+        }
+
+
+    }
+}

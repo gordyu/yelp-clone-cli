@@ -4,13 +4,14 @@
     grid-template-rows: auto;
     grid-template-areas: 
       "bigImg bigImg bigImg"
-      " .     yelpTon     .";
+      "best    best   best"
+      "yelpTon yelpTon yelpTon";
 
     .bigImg{
         position: relative;
         grid-area: bigImg;
         width: auto;
-        overflow: hidden;
+        
         height: 60vh;
 
         background-image: linear-gradient(
@@ -58,15 +59,18 @@
                     font-weight: 700;
                 }
             }
-
-
         }
     }
-    .yelpTon{
-        background-color: rgb(255, 0, 179);
-        width: 100%;
-        height: 60vh;
 
+    .yelpTon{
         grid-area: yelpTon;
+        background-color: $color-grey-light-2;
+        width: 100%; 
+    }
+    .best{
+        grid-area: best;
+        background-color: $color-grey-light-1;
+        width: 100%;
+        height: 40vh;
     }
 }

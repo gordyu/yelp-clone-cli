@@ -5,7 +5,7 @@
     overflow: hidden;
     border: solid black 1px;
     position: absolute;
-    z-index: 3;
+    z-index: 5;
 
     background-color: $color-white;
     height: 42px;
@@ -54,7 +54,7 @@
 
     .icon{
         flex-grow:1;
-        background-color:  $color-primary-light;
+        background-color:  $color-primary;
         height: 100%;
      
         display: flex;
@@ -79,7 +79,7 @@
         border-radius: 3px;
         list-style-type: none;
         transform: translateY(34px);
-        z-index: 2;
+        z-index: 4;
         border: solid black 1px;
         li{
             font-size: 20px;

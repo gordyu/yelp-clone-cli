@@ -1,0 +1,28 @@
+.CategoriaTomLin{
+    width: 217px;
+    height: 217px;
+    background-color: aqua;
+
+    margin: 0 2rem;
+    border-radius: 3px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .item--img{
+        width: 100%;
+        background-color: red;
+        height: 174px;
+    }
+    .item--title{
+        background-color: $color-grey-light-2;
+        height: 43px;
+        width: 100%;
+        align-items: center;
+        font-size: 15px;
+        font-weight: 800;
+        padding-top: 8px;
+    }
+}
+

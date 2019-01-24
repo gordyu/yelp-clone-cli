@@ -2,7 +2,7 @@
     margin-top: 1.7rem;
     color: $color-white;
     display: flex;
-    width: 60%;
+    width: 65%;
     font-size: 1.5rem;
     font-weight: 500;
     align-items:baseline;
@@ -17,5 +17,15 @@
 
     i{
         margin-right: 1rem;
+    }
+
+    .obtione--item{
+        border: none;
+        padding: 0 12px;
+        transition: all .2s ease-out;
+        &:hover{
+            border-bottom:  2px solid $color-white;
+            border-radius: 0;
+        }
     }
 }

@@ -1,0 +1,18 @@
+.best{
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 3rem 0;
+    z-index: 1;
+
+    .rowOfCategory{
+        display: flex;
+        justify-content:space-between;
+    }
+
+
+}

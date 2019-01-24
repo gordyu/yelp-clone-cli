@@ -4,6 +4,8 @@ import { connect } from 'react-redux'
 import  Nav  from './item/Nav';
 import  Obtione  from './item/Obtione';
 import  SearchBar  from './item/SearchBar';
+import  YelpTon  from './item/YelpTon';
+import Best from './item/Best';
 
 
 
@@ -12,6 +14,7 @@ import  SearchBar  from './item/SearchBar';
   render() {
     return (
       <div className="Home">
+
         <div  className="bigImg" >
           <div className="bigImg__cont">
             <Nav />
@@ -25,9 +28,8 @@ import  SearchBar  from './item/SearchBar';
             <div className="bigImg__cont--fotoId">Photo by <span>Kenji M.</span></div>
           </div>
         </div>
-        <div className="yelpTon">
-        
-        </div>
+        <Best />
+        <YelpTon />
       </div>
     )
   }
