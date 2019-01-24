@@ -11,7 +11,7 @@
         grid-area: bigImg;
         width: auto;
         overflow: hidden;
-        height: 55vh;
+        height: 60vh;
 
         background-image: linear-gradient(
         to right bottom,
@@ -35,6 +35,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items:center ;
+                position: relative;
 
                 .logo{
                     margin-bottom: 2rem; 
@@ -42,11 +43,9 @@
 
                 .search--bar{
                     position: relative;
-                    background-color: $color-white;
-                    height: 45px;
-                    width: 100%;
-                    border-radius: 6px;
+                    width: 100%;  
                 }
+
             }
             &--fotoId{
                 color: $color-white;
