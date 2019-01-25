@@ -32,7 +32,7 @@
         font-weight: 500;
         letter-spacing: .5px;
         font-family: inherit;
-        color: rgba(128, 128, 128, 0.226) ;
+        color: rgba(104, 104, 104, 0.904) ;
 
         &:focus{
             outline: none;
@@ -60,7 +60,11 @@
         display: flex;
         align-items: center ;
         justify-content: center;
+        transition: all .2s ease-out;
         cursor: pointer;
+        &:hover{
+            background-color: $color-primary-light;
+        }
       
 
         i{
@@ -80,7 +84,7 @@
         list-style-type: none;
         transform: translateY(34px);
         z-index: 4;
-        border: solid black 1px;
+        box-shadow: .5rem 1rem 2rem rgba($color-black, .2);
         li{
             font-size: 20px;
             padding: 10px 15px;
@@ -104,8 +108,8 @@
         border-radius: 3px;
         list-style-type: none;
         z-index: 2;
-        transform: translateY(34px) translateX(112%);
-        border: solid black 1px;
+        transform: translateY(34px) translateX(113.5%);
+        box-shadow: .5rem 1rem 2rem rgba($color-black, .2);
         li{
             font-size: 20px;
             padding: 10px 15px;

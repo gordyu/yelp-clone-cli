@@ -2,6 +2,13 @@
     width: 217px;
     height: 217px;
     background-color: aqua;
+    transition: all .2s ease-out;
+    border: solid rgb(209, 209, 209) 1px;
+    overflow: hidden;
+    &:hover{
+        box-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+        color:  #4881fc;
+    }
 
     margin: 0 2rem;
     border-radius: 3px;
