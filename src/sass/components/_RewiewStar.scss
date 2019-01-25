@@ -1,0 +1,31 @@
+.RewiewStar{
+    position: relative;
+    height: 19px;
+    width: 120px;
+    overflow: hidden;
+
+
+    .img {
+        transform: translateX(0px) translateY(-402px);
+        backface-visibility: hidden;
+    }
+
+    .img2 {
+        transform: translateX(0px) translateY(-365px);
+        backface-visibility: hidden;
+    }
+
+    .img3 {
+        transform: translateX(0px) translateY(-329px);
+        backface-visibility: hidden;
+    }
+    .img4 {
+        transform: translateX(0px) translateY(-294px);
+        backface-visibility: hidden;
+    }
+    .img5{
+        transform: translateX(0px) translateY(-257px);
+        backface-visibility: hidden;
+    }
+    
+}

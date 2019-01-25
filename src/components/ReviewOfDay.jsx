@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
+import RewiewStar from './RewiewStar';
 
  class ReviewOfDay extends Component {
 
@@ -18,7 +19,7 @@ import { connect } from 'react-redux'
             </div>
         </div>
         <div className="blueLien">Review of the Day</div>
-        <div className="review">{data.reviews}</div>
+        <div className="review"><RewiewStar review={data.reviews} /></div>
         <p className="paragraphR">{data.p}</p>
       </div>
     )
