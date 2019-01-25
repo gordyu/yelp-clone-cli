@@ -54,11 +54,26 @@
                 justify-content: space-between;
             }
         }
+        .mainL2{
+            width: 100%;
+            height: 30rem;
+            margin-top: 7rem;
+            display: flex;
+            justify-content: space-between;
 
+            .reviewOfDay{
+                width: 65.5%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .collections{
+                background-color: rgb(0, 195, 255);
+                width: 31%;
+                border: solid rgb(209, 209, 209) 1px;
+            }
+        }
         
-
-
     }
 }
 
-// list__order--1

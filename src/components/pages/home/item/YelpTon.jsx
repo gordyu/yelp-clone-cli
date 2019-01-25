@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import  CategoriaTomLin  from './CategoriaTomLin';
 import MainCard from '../../../MainCard';
+import ReviewOfDay from '../../../ReviewOfDay';
 
 const data=[
     {location:"Groton",
@@ -9,7 +10,8 @@ const data=[
             {title:'Egg-O-Holic',reviews:4,categories:['indian','vegetarian','halal'],tag:['River West', 'Noble Square','West Town'],img:''},
             {title:'TSAôCAA',reviews:5,categories:['indian','vegetarian','halal'],tag:['River West', 'Noble Square','West Town'],img:''},
             {title:'Egg-O-Holic',reviews:5,categories:['indian','vegetarian','halal'],tag:['River West', 'Noble Square','West Town'],img:''}
-        ]
+        ],
+        reviewOfDay:{userName:'Dennis W.',store:'Matcha Cafe Maiko',reviews:5,p:"Located on the first floor in Japan Town's Japan Center in SF, the likely lengthy line will exactly pinpoint the store entrance for you. The shop itself is rather small and there are a few seats if you must stop to focus all of your energy on immediately consuming your sweet treat. For my first visit here, I went simple and ordered the Matcha soft serve in a waffle cone. I'm not what you would consider a big fan of M..."}
     },
     {location:"San Francisco",
         hotNnew:[
@@ -84,12 +86,18 @@ const data=[
                     </ul>
                 </div>
                 <div className="hotNnewTitle">
-                    <h3 className="heading-tertiary ">Hot & New Businesses</h3>
+                    <h3 className="heading-tertiary">Hot & New Businesses</h3>
                     <div className="hotNnew">
                         {rdHotnNewList()}
                     </div>
                 </div>
-                
+                <div className="mainL2">
+                    <div className="reviewOfDay">
+                        <h3 className="heading-tertiary">Review of the Day</h3>
+                        <ReviewOfDay data={data[0].reviewOfDay} />
+                    </div>
+                    <div className="collections"></div>
+                </div>
             </div>
         </div>
     )

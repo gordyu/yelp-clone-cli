@@ -7,6 +7,10 @@ import { connect } from 'react-redux'
   render() {
     const {title,categories,tag,reviews}= this.props;
 
+    if (!title) {
+        return <div></div>
+    }
+
 
     return (
       <div className="MainCard">

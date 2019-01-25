@@ -1,0 +1,59 @@
+.ReviewOfDay{
+    width: 100%;
+    border: solid rgb(209, 209, 209) 1px;
+    margin-top: 1.5rem;
+    border-radius: 4px;
+    padding: 12px;
+
+
+    .userInfo{
+        display: flex;
+        &-l{
+            height: 60px;
+             width: 60px;
+            background-color: red;
+            border-radius: 6px;
+            margin-right: 12px;
+        }
+
+        &-r{
+            font-size: $default-font-size;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start
+        }
+    }
+
+    .hilite{
+        border-bottom:  2px solid #4881fc00;
+        transition: all .2s ease-out;
+        font-weight: 700;
+        color: #4881fc;
+       
+        &:hover{
+            border-bottom:  2px solid #4881fc;
+            border-radius: 0;
+            cursor: pointer;
+        }
+    }
+    .blueLien{
+        width: 100%;
+        height: 25px;
+        background: rgba(89, 180, 233, 0.356);
+        margin-top: 12px;
+        border-radius: 3px;
+        font-size: $default-font-size;
+        padding-left: 6px;
+    }
+    .review{
+        margin:  12px 0;
+    }
+    .paragraphR{
+        font-size: $default-font-size;
+        line-height: 15px;
+        color: black;
+    }
+
+    
+}
