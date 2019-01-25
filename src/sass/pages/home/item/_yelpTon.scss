@@ -12,7 +12,6 @@
        .list{
             border-bottom: solid $color-grey-dark 1px;
             width: 100%;
-            overflow: hidden;
        }
       
 
@@ -20,20 +19,46 @@
             display: flex;
             list-style: none;
             justify-content:center ;
-            overflow: hidden;
+         
             li{
                 border: none;
                 padding: 0 12px;
                 transition: all .2s ease-out;
                 font-size: 1.7rem;
                 cursor: pointer;
+                z-index: 2;
+                border-radius: 0;
+                border-bottom:  4px solid rgba(255, 107, 136, 0);
                 &:hover{
                     border-bottom:  4px solid $color-primary-light;
-                    border-radius: 0;
                 }
-            } 
+            }
+
+            .on{
+                border-bottom:  2px solid $color-primary;
+            }
         }
+
+        .hotNnewTitle{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2.7rem;
+
+    
+            .hotNnew{
+                margin-top: 1.5rem;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        
 
 
     }
 }
+
+// list__order--1

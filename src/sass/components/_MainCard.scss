@@ -1,0 +1,43 @@
+.MainCard{
+    width: 299px;
+    height: 321px;
+
+    border-radius: 3px;
+    overflow: hidden;
+    border: solid rgb(209, 209, 209) 1px;
+    cursor: pointer;
+    
+
+    .img{
+        width: 100%;
+        background-color: green;
+        height: 180px;
+    }
+    .content{
+        padding: 5px 12px 0;
+        display: flex;
+        flex-direction: column;
+        height: 140px;
+   
+        justify-content: space-between ;
+
+        h4{
+            font-size: 17px;
+            color:  #4881fc;
+        }
+        p{
+            font-size: $default-font-size;
+            color: black;
+            font-weight: 200;
+        }
+        .oprend{
+            font-size: 17px;
+            color:  #fc8148;
+        }
+
+        
+
+    }
+
+    
+}
