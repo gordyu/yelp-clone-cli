@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import RewiewStar from './RewiewStar';
 import { connect } from 'react-redux'
 
  class MainCard extends Component {
@@ -17,7 +17,7 @@ import { connect } from 'react-redux'
         <div className="img"></div>
         <div className="content">
             <h4>{title}</h4>
-            <div className="review"><p>{reviews} reviews</p></div>
+            <div className="review"><RewiewStar review={reviews} /><p>reviews</p></div>
             <p >{categories}</p>
             <p>{tag}</p>
             <div className="oprend"><i class="fas fa-fire"></i> Opened 6 weeks ago </div>

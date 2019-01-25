@@ -21,12 +21,16 @@
    
         justify-content: space-between ;
 
+        .review{
+            display: flex;
+        }
+
         h4{
             font-size: 17px;
             color:  #4881fc;
         }
         p{
-            font-size: $default-font-size;
+            font-size: 15px;
             color: black;
             font-weight: 200;
         }

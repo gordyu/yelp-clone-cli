@@ -8,8 +8,8 @@ const data=[
     {location:"Groton",
         hotNnew:[
             {title:'Egg-O-Holic',reviews:4,categories:['indian','vegetarian','halal'],tag:['River West', 'Noble Square','West Town'],img:''},
-            {title:'TSAôCAA',reviews:5,categories:['indian','vegetarian','halal'],tag:['River West', 'Noble Square','West Town'],img:''},
-            {title:'Egg-O-Holic',reviews:5,categories:['indian','vegetarian','halal'],tag:['River West', 'Noble Square','West Town'],img:''}
+            {title:'TSAôCAA',reviews:2,categories:['indian','vegetarian','halal'],tag:['River West', 'Noble Square','West Town'],img:''},
+            {title:'Egg-O-Holic',reviews:1,categories:['indian','vegetarian','halal'],tag:['River West', 'Noble Square','West Town'],img:''}
         ],
         reviewOfDay:{userName:'Dennis W.',store:'Matcha Cafe Maiko',reviews:5,p:"Located on the first floor in Japan Town's Japan Center in SF, the likely lengthy line will exactly pinpoint the store entrance for you. The shop itself is rather small and there are a few seats if you must stop to focus all of your energy on immediately consuming your sweet treat. For my first visit here, I went simple and ordered the Matcha soft serve in a waffle cone. I'm not what you would consider a big fan of M..."}
     },
@@ -18,7 +18,8 @@ const data=[
             {title:'TSAôCAA',reviews:4,categories:['indian','vegetarian','halal'],tag:['River West', 'Noble Square','West Town'],img:''},
             {title:'Egg-O-Holic',reviews:4,categories:['indian','vegetarian','halal'],tag:['River West', 'Noble Square','West Town'],img:''},
             {title:'Egg-O-Holic',reviews:4,categories:['indian','vegetarian','halal'],tag:['River West', 'Noble Square','West Town'],img:''},
-        ]
+        ],
+        reviewOfDay:{userName:'Manny W.',store:'Matcha Cafe Maiko',reviews:5,p:"Located on the first floor in Japan Town's Japan Center in SF, the likely lengthy line will exactly pinpoint the store entrance for you. The shop itself is rather small and there are a few seats if you must stop to focus all of your energy on immediately consuming your sweet treat. For my first visit here, I went simple and ordered the Matcha soft serve in a waffle cone. I'm not what you would consider a big fan of M..."}
     },
     {location:"San Jose"},
     {location:"Los Angeles"},
@@ -39,6 +40,8 @@ const data=[
     chanchArea =(prArea,prIndex)=>{
         this.setState({area:prArea,locationStores:prIndex});
     }
+
+
 
 
 
@@ -67,7 +70,7 @@ const data=[
     )
 
     const rdHotnNewList =()=>(
-        data[0].hotNnew.map(
+        data[locationStores].hotNnew.map(
             st => (
                 <MainCard key={st.title} title={st.title} reviews={st.reviews} categories={st.categories} tag={st.tag} img={st.img} />
             )  
@@ -94,7 +97,7 @@ const data=[
                 <div className="mainL2">
                     <div className="reviewOfDay">
                         <h3 className="heading-tertiary">Review of the Day</h3>
-                        <ReviewOfDay data={data[0].reviewOfDay} />
+                        <ReviewOfDay data={data[locationStores].reviewOfDay} />
                     </div>
                     <div className="collections"></div>
                 </div>

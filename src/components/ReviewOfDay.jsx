@@ -1,16 +1,10 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
+
 import RewiewStar from './RewiewStar';
+import React from 'react'
 
- class ReviewOfDay extends Component {
-
-
-  render() {
-
-    const { data }= this.props
-    return (
-      <div className="ReviewOfDay">
+export default function ReviewOfDay({ data }) {
+  return (
+    <div className="ReviewOfDay">
         <div className="userInfo">
             <div className="userInfo-l"></div>
             <div className="userInfo-r">
@@ -21,17 +15,7 @@ import RewiewStar from './RewiewStar';
         <div className="blueLien">Review of the Day</div>
         <div className="review"><RewiewStar review={data.reviews} /></div>
         <p className="paragraphR">{data.p}</p>
-      </div>
-    )
-  }
+    </div>
+  )
 }
 
-const mapStateToProps = (state) => ({
-  
-})
-
-const mapDispatchToProps = {
-  
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(ReviewOfDay)
