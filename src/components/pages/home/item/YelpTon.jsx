@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import  CategoriaTomLin  from './CategoriaTomLin';
 import MainCard from '../../../MainCard';
 import ReviewOfDay from '../../../ReviewOfDay';
+import Collections from '../../../Collections';
 
 const data=[
     {location:"Groton",
@@ -11,15 +12,25 @@ const data=[
             {title:'TSAôCAA',reviews:2,categories:['indian','vegetarian','halal'],tag:['River West', 'Noble Square','West Town'],img:''},
             {title:'Egg-O-Holic',reviews:1,categories:['indian','vegetarian','halal'],tag:['River West', 'Noble Square','West Town'],img:''}
         ],
-        reviewOfDay:{userName:'Dennis W.',store:'Matcha Cafe Maiko',reviews:5,p:"Located on the first floor in Japan Town's Japan Center in SF, the likely lengthy line will exactly pinpoint the store entrance for you. The shop itself is rather small and there are a few seats if you must stop to focus all of your energy on immediately consuming your sweet treat. For my first visit here, I went simple and ordered the Matcha soft serve in a waffle cone. I'm not what you would consider a big fan of M..."}
+        reviewOfDay:{userName:'Dennis W.',store:'Matcha Cafe Maiko',reviews:5,p:"Located on the first floor in Japan Town's Japan Center in SF, the likely lengthy line will exactly pinpoint the store entrance for you. The shop itself is rather small and there are a few seats if you must stop to focus all of your energy on immediately consuming your sweet treat. For my first visit here, I went simple and ordered the Matcha soft serve in a waffle cone. I'm not what you would consider a big fan of M..."},
+        collections:[
+            {title:'my',p:"on the first floor in Japan Town's Japan Center in SF, the",places:23,by:'manny loro'},
+            {title:'hydg',p:"on the first floor in Japan Town's Japan Center in SF, the",places:23,by:'manny loro'},
+            {title:'fsss',p:"on the first floor in Japan Town's Japan Center in SF, the",places:23,by:'manny loro'}
+        ]
     },
     {location:"San Francisco",
         hotNnew:[
-            {title:'TSAôCAA',reviews:4,categories:['indian','vegetarian','halal'],tag:['River West', 'Noble Square','West Town'],img:''},
-            {title:'Egg-O-Holic',reviews:4,categories:['indian','vegetarian','halal'],tag:['River West', 'Noble Square','West Town'],img:''},
-            {title:'Egg-O-Holic',reviews:4,categories:['indian','vegetarian','halal'],tag:['River West', 'Noble Square','West Town'],img:''},
+            {title:'sdfgsdfg',reviews:4,categories:['indian','vegetarian','halal'],tag:['River West', 'Noble Square','West Town'],img:''},
+            {title:'Egg-O-sdfgdfs',reviews:4,categories:['indian','vegetarian','halal'],tag:['River West', 'Noble Square','West Town'],img:''},
+            {title:'Egg-O-sdfgsdf',reviews:4,categories:['indian','vegetarian','halal'],tag:['River West', 'Noble Square','West Town'],img:''},
         ],
-        reviewOfDay:{userName:'Manny W.',store:'Matcha Cafe Maiko',reviews:5,p:"Located on the first floor in Japan Town's Japan Center in SF, the likely lengthy line will exactly pinpoint the store entrance for you. The shop itself is rather small and there are a few seats if you must stop to focus all of your energy on immediately consuming your sweet treat. For my first visit here, I went simple and ordered the Matcha soft serve in a waffle cone. I'm not what you would consider a big fan of M..."}
+        reviewOfDay:{userName:'Manny W.',store:'Matcha Cafe Maiko',reviews:5,p:"Located on the first floor in Japan Town's Japan Center in SF, the likely lengthy line will exactly pinpoint the store entrance for you. The shop itself is rather small and there are a few seats if you must stop to focus all of your energy on immediately consuming your sweet treat. For my first visit here, I went simple and ordered the Matcha soft serve in a waffle cone. I'm not what you would consider a big fan of M..."},
+        collections:[
+            {title:'sdfgsdfg',p:"on the first floor in Japan Town's Japan Center in SF, the",places:23,by:'manny loro'},
+            {title:'hsdfgsdfgdg',p:"on the first floor in Japan Town's Japan Center in SF, the",places:23,by:'manny loro'},
+            {title:'sfdgfds',p:"on the first floor in Japan Town's Japan Center in SF, the",places:23,by:'manny loro'}
+        ]
     },
     {location:"San Jose"},
     {location:"Los Angeles"},
@@ -99,7 +110,10 @@ const data=[
                         <h3 className="heading-tertiary">Review of the Day</h3>
                         <ReviewOfDay data={data[locationStores].reviewOfDay} />
                     </div>
-                    <div className="collections"></div>
+                    <div className="Collections">
+                        <h3 className="heading-tertiary">Recent Collections</h3>
+                        <Collections data={data[locationStores].collections} />
+                    </div>
                 </div>
             </div>
         </div>

@@ -62,15 +62,16 @@
         }
     }
 
-    .yelpTon{
-        grid-area: yelpTon;
-        background-color: $color-grey-light-2;
-        width: 100%; 
-    }
+
     .best{
         grid-area: best;
         background-color: $color-grey-light-1;
         width: 100%;
         height: 40vh;
+    }
+    .yelpTon{
+        grid-area: yelpTon;
+        background-color: $color-grey-light-2;
+        width: 100%; 
     }
 }

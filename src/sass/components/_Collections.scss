@@ -1,0 +1,60 @@
+.Collectionslist{
+    border: solid rgb(209, 209, 209) 1px;
+    width: 100%;
+    margin-top: 1.5rem;
+    border-radius: 3px;
+    padding: 0 12px;
+
+    .item{
+        padding:  12px 0;
+        
+
+
+        .img-l{
+            height: 72px;
+            width: 72px;
+            background: red;
+            border-radius: 6px;
+            margin-right: 12px;
+            float: left;
+           
+        }
+
+        .div-r{
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+            white-space: nowrap;
+
+
+            .title{
+                color: #4881fc;
+                font-size: 15px;
+                font-weight: 700;
+            }
+            .p{
+                font-size: 15px;
+                line-height: 15px;
+                text-overflow: ellipsis; 
+                color: black;
+                letter-spacing: .01px;
+            }
+            .places{
+                font-size: 15px;
+                span{
+                    color: #4881fc;
+                }
+            }
+        }
+
+        &:not(:last-child) {
+            border-bottom: solid rgb(146, 146, 146) 1px;
+        }
+
+        
+    }
+
+    
+}
