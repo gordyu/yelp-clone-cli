@@ -6,6 +6,7 @@ import  Obtione  from './item/Obtione';
 import  SearchBar  from './item/SearchBar';
 import  YelpTon  from './item/YelpTon';
 import Best from './item/Best';
+import BrowswBusinesses from './item/BrowswBusinesses';
 
 
 
@@ -30,6 +31,7 @@ import Best from './item/Best';
         </div>
         <Best />
         <YelpTon />
+        <BrowswBusinesses />
       </div>
     )
   }
