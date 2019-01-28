@@ -1,0 +1,41 @@
+.Foot{
+    padding: 3rem 0;
+    .main{
+        width: 960px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .top{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        .colomList{
+            p{
+                font-size: 17px;
+                color: $color-primary;
+                font-weight: 700;
+            }
+            ul{
+                list-style: none;
+                font-size: 15px;
+     
+        
+                li{
+                    color: rgb(72, 129, 252);
+                    cursor: pointer;
+                    border-bottom: solid 2px  $color-grey-light-1;
+                    &:hover{
+                        border-bottom: solid 2px  rgb(72, 129, 252);
+                    }
+                }
+            }
+
+        }
+        
+    }
+
+}
+

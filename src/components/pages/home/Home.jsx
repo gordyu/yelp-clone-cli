@@ -8,6 +8,7 @@ import  YelpTon  from './item/YelpTon';
 import Best from './item/Best';
 import BrowswBusinesses from './item/BrowswBusinesses';
 import  MobileApps  from './item/MobileApps';
+import  Foot  from '../../layout/Foot';
 
 
 
@@ -34,6 +35,7 @@ import  MobileApps  from './item/MobileApps';
         <YelpTon />
         <BrowswBusinesses />
         <MobileApps />
+        <Foot />
       </div>
     )
   }

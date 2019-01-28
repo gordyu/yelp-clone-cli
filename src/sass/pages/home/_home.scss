@@ -7,7 +7,8 @@
       "best    best   best"
       "yelpTon yelpTon yelpTon"
       "BrowswBusinesses BrowswBusinesses BrowswBusinesses"
-      "MobileApps MobileApps MobileApps";
+      "MobileApps MobileApps MobileApps"
+      "Foot        Foot        Foot";
 
     .bigImg{
         position: relative;
@@ -84,6 +85,12 @@
     .MobileApps{
         grid-area: MobileApps;
         background-color: $color-grey-light-2;
+        width: 100%; 
+        border-bottom: rgb(145, 145, 145) solid 1px;
+    }
+    .Foot{
+        grid-area: Foot;
+        background-color: $color-grey-light-1;
         width: 100%; 
     }
 
