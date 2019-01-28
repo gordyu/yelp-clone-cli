@@ -10,7 +10,7 @@ import { connect } from 'react-redux'
     const rdList = ()=>(
         data.map( item =>
             <div key={item.title} className="item">
-                <div className="img-l"></div>
+                <img src={item.img} className="img-l" />
                 <div className="div-r">
                     <p className="title" >{item.title}</p>
                     <p className="p">{item.p}</p>

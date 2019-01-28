@@ -6,7 +6,7 @@ export default function ReviewOfDay({ data }) {
   return (
     <div className="ReviewOfDay">
         <div className="userInfo">
-            <div className="userInfo-l"></div>
+            <img src={data.img} className="userInfo-l"></img>
             <div className="userInfo-r">
                 <p className="hilite">{data.userName}</p>
                 <p className="store">Wrote a review for <span  className="hilite">{data.store}</span></p>

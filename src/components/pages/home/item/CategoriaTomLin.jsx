@@ -6,11 +6,11 @@ class CategoriaTomLin extends Component {
 
 
   render() {
-      const {title} = this.props;
+      const {title,img} = this.props;
 
     return (
         <div className="CategoriaTomLin">
-            <div className="item--img"></div>
+            <img  src={img} className="item--img"></img>
             <div className="item--title u-center-text">{title}</div>
         </div>
     )

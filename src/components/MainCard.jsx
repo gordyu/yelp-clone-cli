@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
  class MainCard extends Component {
 
   render() {
-    const {title,categories,tag,reviews}= this.props;
+    const {title,categories,tag,reviews,img}= this.props;
 
     if (!title) {
         return <div></div>
@@ -14,7 +14,7 @@ import { connect } from 'react-redux'
 
     return (
       <div className="MainCard">
-        <div className="img"></div>
+        <img src={img} className="img"></img>
         <div className="content">
             <h4>{title}</h4>
             <div className="review"><RewiewStar review={reviews} /><p>reviews</p></div>
