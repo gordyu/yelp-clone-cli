@@ -6,6 +6,7 @@
     padding: 12px;
 
 
+ 
     .userInfo{
         display: flex;
         &-l{
@@ -45,6 +46,12 @@
         border-radius: 3px;
         font-size: 15px;
         padding-left: 6px;
+        position: relative;
+        .iconC{
+            position: absolute;
+            top:-30%;
+            right: 0;
+        }
     }
     .review{
         margin:  12px 0;
