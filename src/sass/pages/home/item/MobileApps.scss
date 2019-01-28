@@ -1,0 +1,56 @@
+.MobileApps{
+    padding-top: 3.6rem;
+    padding-bottom: 3.6rem;
+    .main{
+        width: 960px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .rowTube{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+
+        .card{
+            color: black;
+            border-radius: 6px;
+            width: 465px;
+            height: 255px;
+            border: solid rgb(121, 121, 121) 1px;
+            padding: 12px 24px;
+            transition: all .1s ease-out;
+            cursor: pointer;
+            &:hover{
+              
+                box-shadow: 0rem 0rem 20px rgba($color-black, .2);
+                border: solid rgb(72, 129, 252) 1px;
+            }
+            .main{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+                align-items: center;
+                padding: 12px;
+
+                p{
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+            }
+
+
+        
+
+        }
+
+
+
+    }
+
+    
+}

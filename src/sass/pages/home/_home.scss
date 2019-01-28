@@ -6,7 +6,8 @@
       "bigImg bigImg bigImg"
       "best    best   best"
       "yelpTon yelpTon yelpTon"
-      "BrowswBusinesses BrowswBusinesses BrowswBusinesses";
+      "BrowswBusinesses BrowswBusinesses BrowswBusinesses"
+      "MobileApps MobileApps MobileApps";
 
     .bigImg{
         position: relative;
@@ -79,6 +80,11 @@
         grid-area: BrowswBusinesses;
         background-color: $color-grey-light-1;
         width: 100%;
+    }
+    .MobileApps{
+        grid-area: MobileApps;
+        background-color: $color-grey-light-2;
+        width: 100%; 
     }
 
 }

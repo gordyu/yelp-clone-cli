@@ -1,6 +1,6 @@
 .BrowswBusinesses{
-    padding-top: 36px;
-    padding-bottom: 36px;
+    padding-top: 3.6rem;
+    padding-bottom: 3.6rem;
     .main{
         width: 960px;
         display: flex;
@@ -21,11 +21,11 @@
                 width: 100%;
                 border: solid rgb(121, 121, 121) 1px;
                 padding: 12px;
-                transition: all .2s ease-out;
+                transition: all .1s ease-out;
                 cursor: pointer;
                &:hover{
                    color: rgb(72, 129, 252);
-                   box-shadow: 0rem 0rem 1rem rgba(72, 129, 252, 0.61);
+                   box-shadow: 0rem 0rem 20px rgba($color-black, .2);
                    border: solid rgb(72, 129, 252) 1px;
                }
                .main{
