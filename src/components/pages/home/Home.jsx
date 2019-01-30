@@ -17,7 +17,6 @@ import  Foot  from '../../layout/Foot';
   render() {
     return (
       <div className="Home">
-
         <div  className="bigImg" >
           <div className="bigImg__cont">
             <Nav />

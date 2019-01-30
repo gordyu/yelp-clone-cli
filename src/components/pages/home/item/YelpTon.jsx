@@ -158,15 +158,18 @@ const data=[
                     <div className="hotNnew">
                         {rdHotnNewList()}
                     </div>
+                    <p className="u-blueText">See more hot and new businesses</p>
                 </div>
                 <div className="mainL2">
                     <div className="reviewOfDay">
                         <h3 className="heading-tertiary">Review of the Day</h3>
                         <ReviewOfDay data={data[locationStores].reviewOfDay} />
+                        <p className="u-blueText">Read previous reviews</p>
                     </div>
                     <div className="Collections">
                         <h3 className="heading-tertiary">Recent Collections</h3>
                         <Collections data={data[locationStores].collections} />
+                        <p className="u-blueText">Browse more collections</p>
                     </div>
                 </div>
             </div>
