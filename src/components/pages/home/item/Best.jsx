@@ -21,7 +21,6 @@ const rdcategores = () =>(
     return (
       <div className="best">
         <h2 className="heading-secondary">Find the Best Businesses in Town</h2>
-
         <div className="rowOfCategory">
             {rdcategores()} 
         </div>
